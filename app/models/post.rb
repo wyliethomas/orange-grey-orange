@@ -8,6 +8,8 @@ class Post < ActiveRecord::Base
 
   after_save :backup
 
+  scope :pages, where("type_id = 1")
+  scope :blogs, where("type_id = 2")
 
 
   def backup

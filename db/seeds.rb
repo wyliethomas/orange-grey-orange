@@ -7,3 +7,4 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 Admin.create(first_name: 'delete', last_name: 'me', password: 'setup', password_confirmation: 'setup')
+Type.create([{name: 'page'}, {name: 'blog'}])

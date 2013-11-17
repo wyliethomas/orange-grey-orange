@@ -1,5 +1,5 @@
 class Admin < ActiveRecord::Base
-  attr_accessible :email, :first_name, :last_name, :password, :password_confirmation
+  attr_accessible :email, :first_name, :last_name, :password, :password_confirmation, :status
   attr_accessor :password, :password_confirmation
 
   validates_presence_of :email
