@@ -1,2 +1,14 @@
-<h1>Admin::Sessions#new</h1>
-<p>Find me in app/views/admin/sessions/new.html.erb</p>
+<h1>Sign in</h1>
+
+<%= form_for(:session, :url => admin_sessions_path, :html => {:multipart => true}) do |f| %>
+  <p>
+    <%= f.label :email %><br />
+    <%= f.text_field :email, :size => 40 %>
+  </p>
+  <p>
+    <%= f.label :password %><br />
+    <%= f.password_field :password %>
+  </p>
+  <p><%= f.submit "Submit", :class => 'submit' %></p>
+<% end %>
+
