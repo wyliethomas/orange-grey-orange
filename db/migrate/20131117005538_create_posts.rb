@@ -5,6 +5,7 @@ class CreatePosts < ActiveRecord::Migration
       t.column :template_id,                    :integer
       t.column :post_id,                        :integer    #flag if a sub-page
       t.column :type_id,                        :integer
+      t.column :featured,                       :boolean    #flag of its a featured page
       t.column :main_nav,                       :boolean    #flag if on the main nav
       t.column :side_nav,                       :boolean    #flag if on the side nav
       t.column :summary,                        :text

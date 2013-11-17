@@ -5,4 +5,12 @@ class Post < ActiveRecord::Base
   belongs_to :type
   belongs_to :site_admin
   has_many :posts
+
+  after_save :backup
+
+
+
+  def backup
+    #create a copy in the history
+  end
 end
