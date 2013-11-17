@@ -1,6 +1,0 @@
-development:
-  adapter: mysql
-  database: ogo_development
-  username: root
-  password: 1asdf2
-
