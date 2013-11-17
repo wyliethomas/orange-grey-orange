@@ -1,0 +1,77 @@
+.main{
+  margin-top: 70px;
+}
+
+.actionbtn{
+  margin: 0 5px 10px 5px;
+}
+
+/* fix for delete button in bootstrap */
+.form-delete{
+  width: 50px;
+  float: right;
+}
+
+
+/*        FLASH STYLES        */
+
+.flash_content{
+  position: relative;
+  font-size: 15px;
+  width: 100%;
+  margin: auto;
+  text-align: left;
+}
+.flash_deactive{
+  position: relative;
+  bottom: 35px;
+  float: right;
+}
+.flash_active{
+  position: relative;
+  bottom: 35px;
+  float: right;
+}
+#error_explanation{
+  background-color: #f6d0d0;
+}
+#flash_notice, #flash_error, #flash_alert, #flash_message {
+  clear: both;
+  width: 100%;
+  padding: 15px 0px 15px 15px;
+}
+
+#flash_notice {
+  background-color: #CFC;
+  border: solid 1px #6C6;
+  border-left: none;
+  border-right: none;
+  color: green;
+  font-weight: bold;
+  font-style: bold;
+}
+
+#flash_error, #flash_alert {
+  background-color: #FCC;
+  border: solid 1px #C66;
+  border-left: none;
+  border-right: none;
+  color: red;
+  font-weight: bold;
+  font-style: bold;
+}
+#flash_message {
+  background-color: #FAF191;
+  border: solid 1px #615B1F;
+  border-left: none;
+  border-right: none;
+  color: #615B1F;
+  font-weight: bold;
+  font-style: bold;
+}
+
+#flash_error, #flash_alert {
+  background-color: #FCC;
+}
+
+
