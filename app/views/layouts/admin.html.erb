@@ -11,7 +11,18 @@
 </head>
 <body>
 
-<%= yield %>
+<%= render :partial => 'layouts/admin_header' %>
+
+<div class="container main">
+
+    <% flash.each do |name, msg| %>
+      <div class="flash-content">
+        <%= content_tag :div, msg, :id => "flash_#{name}" %>
+      </div>
+    <% end %>
+
+  <%= yield %>
+</div>
 
 </body>
 </html>

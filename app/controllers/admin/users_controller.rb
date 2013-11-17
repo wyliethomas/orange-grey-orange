@@ -4,13 +4,16 @@ class Admin::UsersController < ApplicationController
 
   def index
     @users = Admin.all
+    @user_active = 'active'
   end
 
   def show
     @user = Admin.find(params[:id])
+    @user_active = 'active'
   end
 
   def new
+    @user_active = 'active'
   end
 
   def create
@@ -26,6 +29,7 @@ class Admin::UsersController < ApplicationController
 
   def edit
     @user = Admin.find(params[:id])
+    @user_active = 'active'
   end
 
   def update

@@ -4,13 +4,16 @@ class Admin::PagesController < ApplicationController
 
   def index
     @pages = Post.pages
+    @page_active = 'active'
   end
 
   def show
     @page = Post.find(params[:id])
+    @page_active = 'active'
   end
 
   def new
+    @page_active = 'active'
   end
 
   def create
@@ -27,6 +30,7 @@ class Admin::PagesController < ApplicationController
 
   def edit
     @page = Post.find(params[:id])
+    @page_active = 'active'
   end
 
   def update

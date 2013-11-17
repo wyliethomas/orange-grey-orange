@@ -4,13 +4,16 @@ class Admin::BlogsController < ApplicationController
 
   def index
     @blogs = Post.blogs
+    @blog_active = 'active'
   end
 
   def show
     @blog = Post.find(params[:id])
+    @blog_active = 'active'
   end
 
   def new
+    @blog_active = 'active'
   end
 
   def create
@@ -27,6 +30,7 @@ class Admin::BlogsController < ApplicationController
 
   def edit
     @blog = Post.find(params[:id])
+    @blog_active = 'active'
   end
 
   def update

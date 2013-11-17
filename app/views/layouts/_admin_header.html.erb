@@ -1,0 +1,27 @@
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Admin</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="<%= @dashboard_active %>"><%= link_to 'Dashboard', admin_root_path %></li>
+            <li class="<%= @page_active %>"><%= link_to 'Pages', admin_pages_path %></li>
+            <li class="<%= @blog_active %>"><%= link_to 'Blogs', admin_blogs_path %></li>
+            <li class="<%= @user_active %>"><%= link_to 'Users', admin_users_path %></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="../navbar/">Default</a></li>
+            <li><a href="../navbar-static-top/">Static top</a></li>
+            <li class="active"><a href="./">Fixed top</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
